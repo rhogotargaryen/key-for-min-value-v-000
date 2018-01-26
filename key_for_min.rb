@@ -13,6 +13,4 @@ def key_for_min_value(name_hash)
       high_f = fruit
     end
   end
-
-
 end
