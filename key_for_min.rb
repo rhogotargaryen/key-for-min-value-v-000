@@ -13,11 +13,6 @@ def key_for_min_value(name_hash)
       high_f = fruit
     end
   end
-  
-  
+
+
 end
-fruit_array = []
-quant_array = []
-name_hash.collect do |fruit, quant|
-  fruit_array << fruit
-  quant_array << quant
