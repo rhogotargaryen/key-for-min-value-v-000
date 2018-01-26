@@ -5,4 +5,19 @@ def key_for_min_value(name_hash)
   if name_hash == nil
     return name_hash
   end
+  high_q = 0
+  high_f = ""
+  name_hash do |fruit, quant|
+    if quant > high_q
+      high_q = quant
+      high_f = fruit
+    end
+  end
+  
+  
 end
+fruit_array = []
+quant_array = []
+name_hash.collect do |fruit, quant|
+  fruit_array << fruit
+  quant_array << quant
