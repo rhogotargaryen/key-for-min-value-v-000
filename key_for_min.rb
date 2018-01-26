@@ -4,7 +4,7 @@
 def key_for_min_value(name_hash)
   if name_hash == nil
     return name_hash
-  else
+  end
   high_q = 0
   high_f = ""
   name_hash.collect do |fruit, quant|
