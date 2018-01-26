@@ -6,13 +6,12 @@ def key_for_min_value(name_hash)
     return name_hash
   end
   min_q =
-  high_f = ""
+  min_f = ""
   name_hash.collect do |fruit, quant|
     if min_q < quant
       min_q = quant
-      min_fruit = fruit
+      min_f = fruit
     end
-      
   end
   high_f
 end
