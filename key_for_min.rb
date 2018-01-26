@@ -5,12 +5,15 @@ def key_for_min_value(name_hash)
   if name_hash == nil
     return name_hash
   end
+  min_q = 0
   min_f = ""
-  name_hash.collect do |fruit1, quant1, fruit2, quant2|
-    if quant1 < quant2
-      min_f = fruit1
-    elsif quant2 < quant1
-      min_f = fruit2
+  name_hash.collect do |fruit, quant|
+    if min_q == 0
+      min_q = quant
+      min_f = fruit
+    elsif quant < min_q
+      min_q = quant
+      min_f = fruit
     end
   end
   min_f
